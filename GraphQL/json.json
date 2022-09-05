@@ -1,0 +1,6 @@
+{
+  {
+    "query": "{\n  repository(owner: \"masterysystems\", name: \"mastery-frontend\") {\n    nameWithOwner\n    object(expression: \"master\") {\n\t\t\tcommitUrl\n\t\t\n      ... on Commit {\n        oid\n        history(first: 100, since: \"2022-06-22T04:37:29Z\") {\n          nodes {\n            oid\n            messageHeadline\n\t\t\t\t\t\t\n            author {\n\t\t\t\t\t\t\t\n              user {\n                login\n\t\t\t\t\t\t\t\t\n              }\n            }\n            committedDate\n\t\t\t\t\t\tadditions\n\t\t\t\t\t\tdeletions\n          }\n        }\n      }\n    }\n  }\n}"
+  }
+
+}
